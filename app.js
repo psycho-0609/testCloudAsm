@@ -15,7 +15,7 @@ app.set('view engine','hbs');
 
 
 var productController = require('./index.js')
-app.use('/index',productController);  
+app.use('/',productController);  
 
 
 var server = app.listen(9000,function(){
