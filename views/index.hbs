@@ -17,7 +17,7 @@
             
             <div class="list">
                 <div class="create">
-                    <a href="/index/insert" class="btn-create"><span class="icon-create"><i class="fa fa-plus" aria-hidden="true"></i></span>Create</a>
+                    <a href="/insert" class="btn-create"><span class="icon-create"><i class="fa fa-plus" aria-hidden="true"></i></span>Create</a>
                 </div>
                 <form action="">
                     <table  border="1" >
@@ -35,8 +35,8 @@
                             <td>{{price}} $</td>
                             <td>{{detail}}</td>
                             <td>
-                                <span class="icon"><a href="/index/update?id={{_id}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                                <a href="/index/delete?id={{_id}}"><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+                                <span class="icon"><a href="/update?id={{_id}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a href="/delete?id={{_id}}"><i class="fa fa-trash" aria-hidden="true"></i></a></span>
                             </td>
                         </tr>
                         {{/each}}
