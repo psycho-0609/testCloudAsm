@@ -12,7 +12,7 @@
         <div class="container">
             
             <div class="title">
-                <h1>List book</h1>
+                <h1>List toys</h1>
             </div>
             
             <div class="list">
@@ -23,21 +23,23 @@
                     <table  border="1" >
                         <tr class="thead">
                             <th class="col-name">Name</th>
-                            <th class="col-id">Author</th>
+                            <th class="col-id">Image</th>
                             <th class="col-id"> Price</th>
                             <th class="col-detail">Detail</th>
                             <th class="col-act">Action</th>
+                            
                         </tr> 
                         {{#each products}}
                         <tr>
                             <td>{{name}}</td>
-                            <td>{{author}}</td>
+                            <td><img width="200px", height="auto" src="{{author}}" alt=""></td>
                             <td>{{price}} $</td>
                             <td>{{detail}}</td>
                             <td>
                                 <span class="icon"><a href="/update?id={{_id}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                 <a href="/delete?id={{_id}}"><i class="fa fa-trash" aria-hidden="true"></i></a></span>
                             </td>
+                            
                         </tr>
                         {{/each}}
                     </table>
